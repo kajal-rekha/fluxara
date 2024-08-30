@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+    @apply container mx-auto px-5 lg:px-0;
+}
+.features {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/596/930/non_2x/dark-blue-background-glow-wavy-lines-vector.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
