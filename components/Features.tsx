@@ -29,7 +29,7 @@ const FeatureSection: React.FC = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            const triggerPoint = 600;
+            const triggerPoint = 700;
             setIsScrolled(scrollPosition > triggerPoint);
         };
 
