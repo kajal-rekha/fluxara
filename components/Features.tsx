@@ -30,7 +30,11 @@ const FeatureSection: React.FC = () => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             const triggerPoint = 700;
-            setIsScrolled(scrollPosition > triggerPoint);
+            const isDesktop = window.innerWidth >= 768; 
+
+            if (isDesktop) {
+                setIsScrolled(scrollPosition > triggerPoint);
+            }
         };
 
         window.addEventListener("scroll", handleScroll);
